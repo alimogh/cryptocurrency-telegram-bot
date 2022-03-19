@@ -82,7 +82,7 @@ def first(message):
         send_price = response["dash_usd"]["sell"]
         send_price_rub = response_rub["dash_rur"]["sell"]
 
-        bot.send_message(message.chat.id, f"*DASH*\n\n{datetime.now().strftime('%d-%m-%Y %H:%M')}\n\nDOGE-USD: *{send_price}$*\nDOGE-RUB: *{send_price_rub} RUB*", parse_mode='Markdown')          
+        bot.send_message(message.chat.id, f"*DASH*\n\n{datetime.now().strftime('%d-%m-%Y %H:%M')}\n\nDASH-USD: *{send_price}$*\nDASH-RUB: *{send_price_rub} RUB*", parse_mode='Markdown')          
 
     if message.text == '⬅️ Назад':
         bot.send_message(message.chat.id, '*Вы вернулись в главное меню*', reply_markup=menu, parse_mode='Markdown')
