@@ -90,7 +90,4 @@ def first(message):
     if message.text == 'FAQ':
         bot.send_message(message.chat.id, 'Бот, который берет актуальную информацию с сайта Yobit.net', reply_markup=menu, parse_mode='Markdown')
 
-    else:
-        bot.send_message(message.chat.id, 'Неверная команда!')
-
 bot.infinity_polling()
